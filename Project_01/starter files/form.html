@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Brainster Labs</title>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Latest compiled and minified Bootstrap 4.6 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <!-- CSS script -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Latest Font-Awesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/64087b922b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+
+    <!-- navbar -->
+
+    
+    <nav class="navbar navbar-expand-lg text-dark navbar-light bg-nav "> 
+      
+      <a class="navbar-brand mx-3" href="index.html"
+        ><img src="../images//Logo.png" alt="Logo" class="logo"
+        
+      />
+    <p class=" font-weight-bold fz-1">BRAINSTER</p></a>
+  </div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span> </span>
+    <span> </span>
+    <span> </span>
+  </button>
+      <div class="collapse navbar-collapse navbar-width min-h  black-nav absolute justify-content-center " id="navbarSupportedContent">
+        <ul class="navbar-nav margin-nav font-weight-bold mx-5 ">
+        
+          <li class="nav-item">
+            <a class="nav-link text-dark white  " href="https://brainster.co/marketing">Академија за маркетинг</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark white " href="https://brainster.co/front-end/">Академија за програмирање</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark white " href="https://brainster.co/data-science/">Академија за data science</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark white " href="https://brainster.co/graphic-design/">Академија за дизајн</a>
+          </li>
+        
+        </ul>
+        <a href="form.html" target="_blank" class="">
+        </div>
+          <button class="btn btn-danger margin-button text-white rounded mr-5">
+              Вработи наш студент
+          </button>
+        </a>
+    </nav> 
+
+    <!-- form -->
+
+    <h1 class="text-center py-5 font-weight-bold">Вработи Студенти</h1>
+
+    <form>
+
+      <div class="container-fluid py-5 ">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-xl-4 col-md-5 m-md-3 m-4">
+            <label for="ime" class="font-weight-bold h4">Име и презиме</label>
+            <input type="text" required id="ime" placeholder="Вашето име и презиме" class="w-100 p-3 rounded">
+          </div>
+          <div class="col-xl-4 col-md-5 m-md-3 m-4">
+            <label for="kompanija" class="font-weight-bold h4">Име на вашата компанија</label>
+            <input type="text" required id="kompanija" placeholder=" Име на вашата компанија" class="w-100 p-3 rounded">
+          </div>
+          
+        </div>
+        <div class="row justify-content-center align-items-center">
+          <div class="col-xl-4 col-md-5 m-md-3 m-4">
+            <label for="email" class="font-weight-bold h4">Контакт имејл</label>
+            <input type="email" required id="email" placeholder="Контакт имејл на вашата компанија" class="w-100 p-3 rounded">
+          </div>
+          <div class="col-xl-4 col-md-5 m-md-3 m-4">
+            <label for="telefon" class="font-weight-bold h4">Контакт телефон</label>
+            <input type="tel" required id="telefon" placeholder="Контакт телефон на вашата компанија" class="w-100 p-3 rounded">
+          </div>
+          
+        </div>
+        <div class="row justify-content-center align-items-center">
+          <div class="col-xl-4 col-md-5 m-md-3 m-4">
+            <label for="student" class="font-weight-bold h4">Тип на студенти</label>
+
+          <select name="" id="student" class="p-3 d-block w-100 border-none rounded fz-form " >
+            <option  value="1">Изберете тип на студент</option>
+            
+            <option  value="1">Студент од маркетинг </option>
+            
+            <option  value="2">Студент од програмирање </option>
+            <option  value="3">Студент од data science </option>
+            <option  value="4">Студент од дизајн </option>
+
+          </select>
+    
+          </div>
+          <div class="col-xl-4 col-md-5 m-md-3 m-4 ">
+            <button class="btn btn-danger w-100 p-3 text-white mt-md-4" type="submit" > ИСПРАТИ</button>
+          </div>
+       
+        </div>
+       
+
+      </div>
+
+    </form>
+
+<!-- footer -->
+
+
+<footer class="text-white bg-black text-center p-2 mt-5">
+  <p class="m-0">Изработено со <span class="text-danger">&#10084; </span>од студентите на Brainster </p>
+
+</footer>
+
+
+
+
+    <!-- jQuery library -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="ha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Latest Compiled Bootstrap 4.6 JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+      integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
