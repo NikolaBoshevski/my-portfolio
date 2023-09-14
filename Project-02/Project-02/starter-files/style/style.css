@@ -1,0 +1,540 @@
+@import url("https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-family: "Reenie Beanie", sans-serif;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin-top: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+.beanie {
+  font-family: "Reenie Beanie", sans-serif;
+}
+
+/* background colors */
+
+.bgc-light {
+  background-color: #fcebd5;
+}
+.bgc-normal {
+  background-color: #edd5bb;
+}
+.bgc-dark {
+  background-color: #e09686;
+}
+.bgc-gray {
+  background-color: #e5e5e5;
+}
+
+.bgc-primary-default {
+  background-color: #a16a5e;
+}
+.bgc-primary-contrast {
+  background-color: #d44c2e;
+}
+.bgc-primary-blue {
+  background-color: #1b59ac;
+}
+.bgc-primary-green {
+  background-color: #1bac6f;
+}
+
+/* text colors */
+.color-light {
+  color: #fcebd5;
+}
+
+.color-primary-default {
+  color: #a16a5e;
+}
+.color-normal {
+  color: #edd5bb;
+}
+/* Landing Page */
+
+.page a {
+  text-decoration: none !important ;
+  color: inherit;
+}
+
+.logo img {
+  margin-block: 2rem;
+}
+.page {
+  font-family: "Reenie Beanie", sans-serif;
+}
+
+#landingPage {
+  background: #fcebd5;
+  width: 100vw;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+.header {
+  position: relative;
+  z-index: 100;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 4rem;
+  color: #a26a5e;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  background-color: #fcebd5;
+}
+
+.artistContainer {
+  padding: 3rem;
+  background-color: #edd5bb;
+  color: #a16a5e;
+  text-align: center;
+  /* clip-path: polygon(0 38%, 100% 69%, 100% 100%, 0% 100%); */
+}
+
+#joinContainer {
+  width: 20rem;
+
+  /* clip-path: polygon(0 64%, 100% 20%, 100% 100%, 0 100%); */
+}
+
+#joinContainer select {
+  font-size: 1.5rem;
+}
+
+#joinContainer h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  flex: 1;
+}
+#artists {
+  margin-left: 3.5rem;
+  background-color: transparent;
+  color: inherit;
+  border: 1px solid #a16a5e;
+  border-radius: 4px;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+}
+
+.artistContainer {
+  min-height: 15rem;
+}
+.visitorContainer {
+  background-color: #a16a5e;
+  color: #fcebd5;
+  padding: 3rem;
+  min-height: 15rem;
+}
+.headerFontStyle {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+}
+
+/* /Landing Page */
+
+.col-title {
+  min-width: 200px;
+}
+
+/* Visitors Home Page */
+#visitorsHomePage {
+  background-color: #f5e3cb;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+.fa-gavel {
+  font-size: 2.5rem;
+  float: right;
+  margin-right: 1rem;
+}
+
+.banner {
+  min-height: 30vh;
+  background-color: #f5e3cb;
+  color: #a16a5e;
+  overflow-x: hidden;
+}
+.banner h2 {
+  font-size: 1.85rem;
+  line-height: 2.5rem;
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+.banner a {
+  background-color: #a26a5e;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  color: #f5e3cb;
+  font-size: 1rem;
+  border: transparent;
+  padding: 0.5rem 1.25rem;
+}
+
+.col-5 {
+  flex: 1s;
+}
+
+.scroll-element .col img {
+  width: 5rem;
+  aspect-ratio: 6/4;
+  margin-inline: 3rem;
+}
+
+.scroll-parent {
+  position: relative;
+  width: 100vw;
+  min-height: 10rem;
+  background-color: #edd5bb;
+  overflow: hidden;
+}
+
+.scroll-element {
+  width: inherit;
+  height: inherit;
+
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+@keyframes primary {
+  from {
+    left: 0%;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+.primary {
+  animation: primary 7s linear infinite;
+  animation-play-state: running;
+}
+
+.secondary {
+  animation: secondary 7s linear infinite;
+  animation-play-state: running;
+}
+
+@keyframes primary {
+  from {
+    left: 0%;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@keyframes secondary {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0%;
+  }
+}
+
+@keyframes third {
+  from {
+    right: 0%;
+  }
+  to {
+    right: -100%;
+  }
+}
+.third {
+  animation: third 7s linear infinite;
+  animation-play-state: running;
+}
+
+.fourth {
+  animation: fourth 7s linear infinite;
+  animation-play-state: running;
+}
+
+@keyframes third {
+  from {
+    left: 0%;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@keyframes fourth {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0%;
+  }
+}
+
+.carousel-inner {
+  background-color: #fcebd5;
+  width: 100vw;
+}
+
+.wrapper img {
+  width: 45%;
+  border-radius: 50%;
+  border: 2px solid #a26a5e;
+  aspect-ratio: 1/1;
+  margin-top: -50px;
+  margin-inline: auto;
+}
+
+/* carousel */
+.wrapper-inner {
+  width: 40vw;
+  display: block;
+  word-wrap: break-word;
+  padding: 2rem;
+  font-size: 9px;
+  background-color: #e09686;
+  color: #f8f8f8;
+  font-family: "Roboto", sans-serif;
+}
+
+.wrapper-secondary {
+  color: #a16a5e;
+  background-color: transparent;
+  font-size: 10px;
+  width: 40vw;
+  padding: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.verticalLine {
+  position: absolute;
+  border: 1px solid #a26a5e;
+  top: 50%;
+  width: 179px;
+  transform: rotate(90deg);
+}
+
+/* / Visitors Home Page */
+
+/* clip-path: polygon(0 76%, 100% 40%, 100% 100%, 0 100%); */
+
+/* Visitor Listing Page */
+#visitorListingPage {
+  min-height: 100vh;
+  max-width: 100vw;
+}
+#visitorListingContainer {
+  mix-blend-mode: normal;
+}
+
+.listingWrapper:nth-of-type(2n) {
+  background-color: #a16a5e;
+  color: #fcebd5;
+}
+
+.listingWrapper:nth-of-type(2n) .color-primary-default {
+  color: #fcebd5;
+}
+
+.listingWrapper:nth-of-type(2n) .bgc-primary-default {
+  background-color: #fcebd5;
+  color: #a16a5e;
+}
+
+#filterListing {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  z-index: 111111111;
+}
+
+/*/ Visitor Listing Page */
+
+/* Visitor Filter Page */
+
+form label {
+  font-size: 18px;
+  font-weight: 300;
+}
+input,
+select {
+  background-color: transparent;
+  border: 1px solid #edd5bb;
+  border-radius: 2px;
+  color: #edd5bb;
+  font-weight: 100;
+  font-size: 15px;
+  width: 40%;
+  mix-blend-mode: normal;
+  padding: 5px;
+}
+input::placeholder {
+  color: #edd5bb;
+}
+
+#filterForm > div:not(:last-of-type) {
+  border-bottom: 2px solid #fcebd5;
+}
+
+form .column i {
+  font-size: 40px;
+}
+
+form .checkButton i {
+  font-size: 40px;
+}
+
+.checkButton {
+  width: 50px;
+  aspect-ratio: 1/1;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* /Visitor Filter Page */
+
+/* Artist home page */
+
+.hamburger {
+  font-size: 40px;
+  float: right;
+  padding-right: 20px;
+}
+
+#artistHomePageContainer {
+  min-height: 52vh;
+}
+
+#artistHomePageContainer h3 {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.chartSection button {
+  border: transparent;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  padding: 5px 10px;
+}
+
+.header ul {
+  list-style: none;
+  font-size: 25px;
+  font-weight: 300;
+  padding: 2rem;
+}
+
+ul.dropdown {
+  display: none;
+  top: 100%;
+  right: 0%;
+  transform: translateY(12%);
+  min-width: 100vw;
+}
+
+/* /Artist home page */
+
+/* items page */
+
+#addNewItemDiv {
+  border: 1px #a16a5e dashed;
+}
+
+#addNewItemDiv h2 {
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+#itemDate {
+  font-weight: 300;
+  font-size: 15px;
+}
+
+#itemTitle {
+  font-size: 20px;
+}
+
+/* buttons */
+
+.col-3 .btn {
+  font-size: 12px;
+}
+
+.sendToAuctionBtn {
+  background-color: #1b59ac;
+}
+.publishBtn {
+  background-color: #1bac6f;
+}
+
+.editBtn {
+  color: #a16a5e;
+}
+
+/* artist new Item */
+
+#description {
+  border: 1px solid #edd5bb;
+  border-radius: 2px;
+  color: #edd5bb;
+  font-weight: 100;
+  font-size: 15px;
+  width: 40%;
+  mix-blend-mode: normal;
+  padding: 5px;
+}
+.snapshot {
+  border: dotted 2px #fcebd5;
+  padding: 70px;
+}
+#captureImageIcon {
+  font-size: 70px;
+}
+#cancel-btn {
+  background-color: #e5e5e5;
+  color: #5a5a5a;
+}
+
+input[type="checkbox"] {
+  width: 16px;
+  aspect-ratio: 1/1;
+  accent-color: #edd5bb;
+  margin-left: 5px;
+}
+
+#takenSnapshot {
+  display: none;
+  object-fit: contain;
+  object-position: center;
+}
+/* capture image */
+
+#liveCapture {
+  display: none;
+}

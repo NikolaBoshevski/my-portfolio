@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <!-- Latest compiled and minified Bootstrap 4.6 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <!-- CSS script -->
+    <link rel="stylesheet" href="../style/style.css" />
+    <!-- Latest Font-Awesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/64087b922b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <!-- landing page -->
+
+    <section class="page" id="landingPage">
+      
+        <h1 class="header mx-auto h2 text-center">Street ARTists</h1>
+        <div class="container"></div>
+          <div class="logo row justify-content-center">
+          <a href="#landingPage">
+            <img src="../images/Logo.png" alt="logo" />
+          </a>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div id="joinContainer" class="my-5">
+            <div class="artistContainer">
+              <a href="#artistHomePage" id="joinAsArtist">
+                <h2>Join as artist</h2>
+              </a>
+                <select id="artists">
+                 
+                </select>
+             
+            </div>
+            <div class="visitorContainer">
+              <a href="#visitorHomePage">
+                <h2>Join as visitor</h2>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- visitors home page -->
+    <section class="page" id="visitorHomePage">
+      <!-- header -->
+      <div class="container">
+      <div class="row header justify-content-start align-items-center">
+        <div class="col mr-auto">
+          <a href="#landingPage ">
+            <img src="../images/Logo.png" class="ml-1" alt="Logo" id="logo" />
+          </a>
+        </div>
+        <div class="col headerFontStyle col-title">
+          <h1 class="h2">Street ARTists</h1>
+        </div>
+        <div class="col ">
+          <a href="#auctionPage">
+            <i class="fa-solid fa-gavel fa-flip-horizontal"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+      <!-- banner -->
+      <div class="container">
+      <div class="banner py-3 row justify-content-between align-items-center">
+        <div class="col-6 mt-3 roboto">
+          <h2 class="font-weight-bold">Looking for a masterpiece?</h2>
+        </div>
+        <div class="col-6 mt-3 roboto">
+          <a class="ml-3" href="#visitorListingPage">Find one now</a>
+        </div>
+      </div>
+    </div>
+      <!-- gallery-top -->
+      <div class="scroll-parent">
+        <div class="container">
+        <div class="scroll-element primary row">
+          <div class="col">
+            <a href="#visitorListingPage">
+              <img src="../images/img-1.jpg" alt="img-1" />
+            </a>
+          </div>
+          <div class="col">
+            <a href="#visitorListingPage">
+              <img src="../images/img-3.jpeg" alt="img-3" />
+            </a>
+          </div>
+          <div class="col">
+            <a href="#visitorListingPage">
+              <img src="../images/img-1.jpg" alt="img-1" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+          <div class="scroll-element secondary row">
+            <div class="col">
+              <a href="#visitorListingPage">
+                <img src="../images/img-1.jpg" alt="img-1" />
+              </a>
+            </div>
+            <div class="col">
+              <a href="#visitorListingPage">
+                <img src="../images/img-3.jpeg" alt="img-3" />
+              </a>
+            </div>
+            <div class="col">
+              <a href="#visitorListingPage">
+                <img src="../images/img-1.jpg" alt="img-1" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- gallery-bot -->
+      <div class="scroll-parent">
+        <div class="container">
+        <div class="scroll-element third row">
+          <div class="col">
+            <a href="#visitorListingPage">
+              <img src="../images/img-1.jpg" alt="img-1" />
+            </a>
+          </div>
+          <div class="col">
+            <a href="#visitorListingPage">
+              <img src="../images/img-3.jpeg" alt="img-1" />
+            </a>
+          </div>
+          <div class="col">
+            <a href="#visitorListingPage">
+              <img src="../images/img-1.jpg" alt="img-1" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="scroll-element fourth row">
+          <div class="col">
+            <a href="#visitorListingPage">
+              <img src="../images/img-1.jpg" alt="img-1" />
+            </a>
+          </div>
+          <div class="col">
+            <a href="#visitorListingPage">
+              <img src="../images/img-3.jpeg" alt="img-1" />
+            </a>
+          </div>
+          <div class="col">
+            <a href="#visitorListingPage">
+              <img src="../images/img-1.jpg" alt="img-1" />
+            </a>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <!-- carousel -->
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide carousel-fade"
+        data-interval="0"
+        data-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div
+                class="wrapper py-5 row position-relative justify-content-around align-items-center"
+              >
+                <div class="col">
+                  <div class="wrapper-inner text-center">
+                    <img
+                      src="../images/img-4.jpeg"
+                      alt="img-4"
+                      id="image-four"
+                    />
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Alias, necessitatibus.
+                    </p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="wrapper-secondary text-center">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Tempora eaque eum, quaerat veritatis modi molestias quod
+                    reprehenderit sit exercitationem inventore at. Nobis maiores
+                    officia vitae harum error ratione dicta dolores!
+                  </div>
+                </div>
+                <div class="verticalLine"></div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div
+                class="wrapper py-5 row position-relative justify-content-around align-items-center"
+              >
+                <div class="col">
+                  <div class="wrapper-inner text-center">
+                    <img
+                      src="../images/img-5.jpg"
+                      alt="img-4"
+                      id="image-four"
+                    />
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Alias, necessitatibus.
+                    </p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="wrapper-secondary text-center">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Tempora eaque eum, quaerat veritatis modi molestias quod
+                    reprehenderit sit exercitationem inventore at. Nobis maiores
+                    officia vitae harum error ratione dicta dolores!
+                  </div>
+                </div>
+                <div class="verticalLine"></div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div
+                class="wrapper py-5 row position-relative justify-content-around align-items-center"
+              >
+                <div class="col">
+                  <div class="wrapper-inner text-center">
+                    <img
+                      src="../images/img-6.jpg"
+                      alt="img-4"
+                      id="image-four"
+                    />
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Alias, necessitatibus.
+                    </p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="wrapper-secondary text-center">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Tempora eaque eum, quaerat veritatis modi molestias quod
+                    reprehenderit sit exercitationem inventore at. Nobis maiores
+                    officia vitae harum error ratione dicta dolores!
+                  </div>
+                </div>
+                <div class="verticalLine"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+    
+  
+    <!--Visitor listing page  -->
+    <section class="page" id="visitorListingPage">
+     
+      <!-- header -->
+      <div class="container">
+        <div class="row header align-items-center">
+          <div class="col">
+            <a href="#landingPage ">
+              <img src="../images/Logo.png" class="ml-1" alt="Logo" id="logo" />
+            </a>
+          </div>
+          <div class="col headerFontStyle col-title">
+            <h1 class="h2">Street ARTists</h1>
+          </div>
+          <div class="col">
+            <a href="#auctionPage">
+              <i class="fa-solid fa-gavel fa-flip-horizontal"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- listing -->
+      <div id="visitorListingContainer" class="bgc-normal">
+      </div>
+        
+        <a href="#visitorFilters" id="filterListing">
+          <div class="bgc-primary-contrast">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="45"
+              height="45"
+              viewBox="0 0 1024 1024"
+            >
+              <path
+                fill="white"
+                d="M160.048 387.872V32c0-17.664-14.336-32-32-32s-32 14.336-32 32v355.84C40.72 402.096-.352 452.288-.352 512c0 59.727 41.072 109.903 96.4 124.176V992c0 17.664 14.336 32 32 32s32-14.336 32-32V636.144c55.28-14.304 96.305-64.447 96.305-124.144c0-59.68-41.025-109.84-96.305-124.128zm-31.632 188.16c-.112 0-.24-.03-.368-.03c-.144 0-.272.032-.415.048c-35.153-.208-63.697-28.848-63.697-64.048c0-35.184 28.56-63.84 63.712-64.033c.128 0 .272.033.4.033s.24-.033.368-.033c35.136.224 63.664 28.864 63.664 64.032c0 35.183-28.528 63.807-63.664 64.031zm415.648 3.842l-.001-547.872c0-17.664-14.336-32-32-32s-32 14.336-32 32v547.84c-55.328 14.273-96.4 64.433-96.4 124.16s41.072 109.903 96.4 124.176v163.824c0 17.664 14.336 32 32 32s32-14.336 32-32V828.146c55.264-14.304 96.288-64.447 96.288-124.144c-.016-59.664-41.023-109.824-96.287-124.128zm-31.649 188.16c-.128 0-.24-.031-.368-.031c-.144 0-.272.032-.415.048c-35.153-.208-63.697-28.848-63.697-64.048c0-35.216 28.609-63.872 63.792-64.032c.113 0 .225.032.337.032c.096 0 .192-.032.288-.032c35.168.192 63.744 28.832 63.744 64.032c0 35.183-28.529 63.807-63.681 64.031zm415.648-572.159l-.001-163.871c0-17.664-14.336-32-32-32c-17.68 0-32 14.336-32 32v163.84c-55.328 14.256-96.4 64.432-96.4 124.159s41.072 109.92 96.4 124.176v547.824c0 17.664 14.32 32 32 32c17.664 0 32-14.336 32-32V444.147c55.264-14.304 96.288-64.447 96.288-124.144c-.016-59.664-41.023-109.824-96.287-124.128zm-31.649 188.161c-.128 0-.24-.031-.352-.031c-.143 0-.287.032-.415.032c-35.152-.192-63.712-28.832-63.712-64.032c0-35.184 28.56-63.84 63.696-64.032c.143 0 .287.032.415.032s.24-.032.352-.032c35.136.24 63.664 28.864 63.664 64.032c.033 35.183-28.496 63.807-63.648 64.031z"
+              />
+            </svg>
+          </div>
+        
+        </a>
+   
+      
+    </section>
+
+    <!-- Visitor Filters -->
+
+    <section class="page" id="visitorFilters">
+      <!-- header -->
+      <div class="container">
+        <div class="row header align-items-center">
+          <div class="col">
+            <a href="#landingPage ">
+              <img src="../images/Logo.png" class="ml-1" alt="Logo" id="logo" />
+            </a>
+          </div>
+          <div class="col headerFontStyle col-title">
+            <h1 class="h2">Street ARTists</h1>
+          </div>
+          <div class="col">
+            <a href="#auctionPage">
+              <i class="fa-solid fa-gavel fa-flip-horizontal"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- filters-->
+      <div class="filter-page roboto bgc-primary-default">
+        <div class="filterContainer mx-3 py-5 color-normal">
+          <form id="filterForm">
+            <div
+              class="d-flex border-0 justify-content-between align-items-center"
+            >
+              <div class="column">
+                <h2 class="color-light">Filter By</h2>
+              </div>
+              <div class="column">
+                <i class="fa-solid fa-xmark" id="closeButton"></i>
+              </div>
+            </div>
+            <div class="mt-4">
+              <label>By Item Title </label>
+              <input
+                type="text"
+                class="d-block mb-5"
+                placeholder="Label"
+                id="itemTitle"
+                name="itemTitle"
+              />
+            </div>
+            <div class="mt-4">
+              <label>By Artist </label>
+              <select id="filterArtist" class="d-block mb-5" name="filterArtist">
+              </select>
+            </div>
+            <div class="mt-4">
+              <label>By Price </label>
+              <div class="row">
+                <div class="col-5">
+                  <label for="min">Min:</label>
+                  <input
+                    type="number"
+                    class="mb-5 ml-2"
+                    id="min" name="min"
+                    placeholder="Label"
+                  />
+                </div>
+                <div class="col-5 ml-auto">
+                  <label for="max">Max:</label>
+                  <input
+                    type="number"
+                    class="mb-5 ml-2"
+                    id="max"
+                    placeholder="Label"
+                    name="max"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="mt-4 mb-4">
+              <label>By Type </label>
+              <select id="filterTypeArtist" class="d-block mb-5" name="filterTypeArtist">
+                <!-- <option value="default">Choose</option> -->
+              </select>
+            </div>
+            <div
+              class="checkButton bgc-primary-contrast d-flex justify-content-center align-items-center ml-auto"
+              type="button"
+            >
+              <i class="fa-solid fa-check" style="color: #ffffff"></i>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- /visitor filters page -->
+
+    <!-- Artist Home page -->
+    <section class="page" id="artistHomePage">
+      <!-- header -->
+      <div class="container">
+        <div class="row header align-items-center">
+          <div class="col">
+            <a href="#landingPage ">
+              <img src="../images/Logo.png" class="ml-1" alt="Logo" id="logo" />
+            </a>
+          </div>
+          <div class="col headerFontStyle col-title">
+            <h1 class="h2 artistNameHeader" >Street ARTists</h1>
+          </div>
+          <div class="col" >
+            <i class="fa-solid hamburger fa-bars position-relative " ></i>
+              <ul  class="dropdown  position-absolute bgc-primary-default color-light justify-content-center align-items-center roboto ">
+                <li class="text-center mb-2"><a href="#artistHomePage">Home</a></li>
+                <li class="text-center mb-2"><a href="#artistItemPage">Artists</a></li>
+                <li class="text-center"><a href="#auctionPage">Auction</a></li>
+              </ul>
+          </div>
+        </div>
+      </div>
+      <div id="artistHomePageContainer" class="bgc-normal roboto">
+        <div class="container">
+          <div
+            class="roboto row pt-3 justify-content-around align-items-center"
+          >
+            <div
+              class="col-5 px-2 py-3 rounded text-center bgc-primary-default"
+            >
+              <div class="itemSold color-light">
+                <h3>Total items Sold</h3>
+                <h2 id="totalItemSold">12/34</h2>
+              </div>
+            </div>
+            <div
+              class="col-5 rounded text-center px-2 py-3 bgc-primary-default"
+            >
+              <div class="itemSold color-light">
+                <h3>Total Income</h3>
+                <h2 id="totalIncome">$1234</h2>
+              </div>
+            </div>
+          </div>
+          <div
+            class="liveAuctionItem rounded text-center px-2 py-3 bgc-primary-contrast color-light my-3"
+          >
+            <h3>Live auctioning Item</h3>
+            <h2 id="auctionItem">$1200</h2>
+            <h3>current bid</h3>
+          </div>
+        </div>
+        <div class="chartSection py-3 bgc-light">
+          <div class="container">
+            <h3 class="color-primary-default mb-3">
+              Display my income for last:
+            </h3>
+            <div class="row justify-content-around align-items-center">
+              <div class="col-3">
+                <button class="text-center bgc-primary-default color-light" id="last7">
+                  7 days
+                </button>
+              </div>
+              <div class="col-3">
+                <button class="text-center bgc-primary-default color-light" id="last14">
+                  14 days
+                </button>
+              </div>
+              <div class="col-3">
+                <button class="text-center bgc-primary-default color-light" id="last30">
+                  30 days
+                </button>
+              </div>
+            </div>
+            <div>
+              <canvas id="myChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Artist Home page -->
+
+    <!-- Artist Item page -->
+    <section class="page" id="artistItemPage">
+      <!-- header -->
+      <div class="container">
+        <div class="row header align-items-center">
+          <div class="col">
+            <a href="#landingPage ">
+              <img src="../images/Logo.png" class="ml-1" alt="Logo" id="logo" />
+            </a>
+          </div>
+          <div class="col headerFontStyle col-title">
+            <h1 class="h2 artistNameHeader" >Street ARTists</h1>
+          </div>
+          <div class="col" >
+            <i class="fa-solid fa-bars position-relative hamburger"></i>
+              <ul class="dropdown  position-absolute bgc-primary-default color-light justify-content-center align-items-center roboto ">
+                <li class="text-center mb-2"><a href="#artistHomePage">Home</a></li>
+                <li class="text-center mb-2"><a href="#artistItemPage">Artists</a></li>
+                <li class="text-center"><a href="#auctionPage">Auction</a></li>
+              </ul>
+          </div>
+        </div>
+      </div>
+      <!-- main content -->
+      <div class="bgc-normal py-4">
+        <div class=" container-fluid py-3  roboto bgc-light color-primary-default" >
+          <div id="addNewItemDiv" class="p-4" >
+            <a href="#artistNewItemPage">
+              <h2 class="text-center" id="itemHeader">+ Add new Item</h2>
+            </a>
+          </div>
+        </div>
+        <!-- cards -->
+
+        <div id="artistItemContainer">
+        </div>
+        <dialog id="modalDialog">Are you sure you want to remove this item?
+          <div class=" text-center ">
+          <button id="closeModal">Close</button>
+          <button id="confirmBtn">Confirm</button>
+        </div>
+        </dialog>
+      </div>
+    </section>
+    <!-- /Artist Item page -->
+
+    <!-- Artist New Item page -->
+
+    <section id="artistNewItemPage" class="page roboto">
+      <!-- header -->
+      <div class="container">
+        <div class="row header align-items-center">
+          <div class="col">
+            <a href="#landingPage ">
+              <img src="../images/Logo.png" class="ml-1" alt="Logo" id="logo" />
+            </a>
+          </div>
+          <div class="col headerFontStyle col-title">
+            <h1 class="h2 artistNameHeader" >Street ARTists</h1>
+          </div>
+          <div class="col" >
+            <i class="fa-solid fa-bars position-relative hamburger"></i>
+              <ul class="dropdown  position-absolute bgc-primary-default color-light justify-content-center align-items-center roboto ">
+                <li class="text-center mb-2"><a href="#artistHomePage">Home</a></li>
+                <li class="text-center mb-2"><a href="#artistItemPage">Artists</a></li>
+                <li class="text-center"><a href="#auctionPage">Auction</a></li>
+              </ul>
+          </div>
+        </div>
+      </div>
+      <!-- /header -->
+      <form class="form bgc-primary-default color-light py-4" id="addEditNewItem" >
+        <div class="container">
+          <div class="row d-flex align-items-center">
+              <div class="col-7">
+                  <p class="newItemTitle">Add new Item</p>
+              </div>
+              <div class="col-5 d-flex justify-content-end">
+                  <label for="isPublishedCheckbox" class="title label">Is published</label>
+                  <label class="box">
+                      <input type="checkbox" id="isPublishedCheckbox"  />
+                      <span class="checkmark"></span>
+                  </label>
+              </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row d-flex align-items-center">
+              <div class="col-12">
+                  <label for="title" class="title">Title</label>
+                  <input type="text" id="title" class="input w-100" required />
+                  <label for="description" class="description ">Description</label>
+                  <textarea id="textAreaDescription" cols="30" rows="4" class="w-100 bgc-primary-default border color-light"></textarea>
+              </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row d-flex align-items-center">
+              <div class="col-6">
+                  <label for="type" class="type">Type</label>
+                  <input type="text" id="type" class="input w-100" required />
+              </div>
+              <div class="col-6">
+                  <label for="price" class="price">Price</label>
+                  <input type="tel" id="price" class="input w-100" required />
+              </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row d-flex align-items-center">
+              <div class="col-12">
+                  <label for="url" class="imageURL">Image URL</label>
+                  <input type="text" id="url" class="input w-100" />
+              </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row d-flex align-items-center justify-content-center">
+              <div class="col-5 text-center my-1">
+                  <span class="title">or</span>
+              </div>
+          </div>
+        </div>
+          <div class="snapshot d-flex justify-content-center align-items-center flex-column mx-2" id="snapshotContainer">
+              <i class="fa-sharp fa-solid fa-camera" id="captureImageIcon"></i>
+              <p class="title">Take a snapshot</p>
+              <img id="takenSnapshot">
+          </div>
+          <div class="container">
+          <div class="row d-flex align-items-center justify-content-center">
+              <div class="col-6">
+                  <button type="submit" class="bgc-primary-contrast color-light my-3 btn w-100" id="addNewItem-btn">
+                      Add New Item
+                  </button>
+              </div>
+              <div class="col-6">
+                  <a href="#artistItemPage" class="btn color-normal w-100" id="cancel-btn">Cancel</a>
+              </div>
+          </div>
+        </div>
+      </form>
+  </section>
+    <!--/ Artist New Item page -->
+
+    <!-- Artist capture image page -->
+    <section id="artistCaptureImage" class="page">
+      <div class="container">
+      <div class="row camera align-items-center mt-3">
+          <div class="col-12 w-100 h-100">
+              <video id="liveStream" autoplay width="400" height="500px"></video>
+              <canvas id="liveCapture"></canvas>
+          </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+          <i class="fa-sharp fa-solid fa-camera text-center " id="captureImageBtn"></i>
+      </div>
+    </div>
+  </section>
+    <!--/ Artist capture image page -->
+
+    <!-- Auction Page -->
+
+    <section class="page" id="auctionPage">
+      <h3>This is auction Page</h3>
+    </section>
+    <!-- /Auction page -->
+
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="ha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Latest Compiled Bootstrap 4.6 JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+      integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  </body>
+
+  <script type="module" src="../app/main.js"></script>
+</html>
