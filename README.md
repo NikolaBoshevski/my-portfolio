@@ -1,1 +1,1 @@
-All of my projects and websites are uploaded on a separate branch, please review them all. 
+All of my projects and websites are uploaded on separate branches, please make sure to review them all. 
